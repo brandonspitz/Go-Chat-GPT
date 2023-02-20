@@ -22,7 +22,7 @@ func main() {
 	client := gpt3.NewClient(apiKey)
 
 	resp, err := client.Completion(ctx, gpt3.CompletionRequest{
-		Prompt:    []string{"The first thing you should know about go is "},
+		Prompt:    []string{"The first thing you should know about creating an API is"},
 		MaxTokens: gpt3.IntPtr(30),
 		Stop:      []string{"."},
 		Echo:      true,
